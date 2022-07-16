@@ -172,7 +172,7 @@ body {
   transform: skewY(-7deg); }
   @media (min-resolution: 192dpi) {
     .section-features {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.8)), url(../img/nat-4lowress.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.6), rgba(40, 180, 133, 0.8)), url(../img/nat4-.jpg); } }
   .section-features > * {
     transform: skewY(7deg); }
   @media only screen and (max-width: 56.25em) {
@@ -410,7 +410,7 @@ body {
       height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37em), (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.6), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
