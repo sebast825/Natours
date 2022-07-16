@@ -1,0 +1,60 @@
+
+.header{
+	height:95vh;
+	/* is like on image in top of the other- one is the color and the other the photo */
+	background-image: linear-gradient(
+		to right bottom, 
+	rgba($color-primary-light,.6),
+	rgba($color-primary-dark,.8)),
+	url(../img/hero-small.jpg);
+	@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+		height: 95vh;
+  }
+	//when it has a high resolution and a width bigger than 600
+	//the , act as || in js
+	//if wana check in FE about the dp need to put the DPR in 2.0 and will activate the query
+	@media only screen and (min-resolution: 192dpi) and (min-width:37em),(min-width:125em)  {
+		background-image: linear-gradient(
+		to right bottom, 
+	rgba($color-secondary-light,.6),
+	rgba($color-primary-dark,.8)),
+	url(../img/hero.jpg);
+	}
+
+	background-size: cover;
+	/* if chrome size changes the top part of image is the same */
+	background-position: top;
+	/*is to cut image; each measure is for a corner:  top left, bottom left */
+	/* si cambio el ultimo valor de vh a % cambia el bottom */
+	clip-path: polygon(0 0,100% 0,100% 75vh, 0 100%);
+	-webkit-clip-path:polygon(0 0,100% 0,100% 75vh, 0 100%);
+
+	@include respond(tab-port){
+		-webkit-clip-path:polygon(0 0,100% 0,100% 90%, 0 100%);
+
+		clip-path: polygon(0 0,100% 0,100% 90%, 0 100%);
+	}
+	/* so the logo-box position is from the header*/
+	position:relative;
+	&__text-box{
+		position: absolute;
+		top: 40%;
+		left:50%;
+		/* how position make start the element at the half we have to center with a transform */
+		transform: translate(-50%,-50%);
+		/* alinea el boton */
+		text-align: center;
+	}
+	&__logo-box{
+		position: absolute;
+		top:4rem;
+		left:4rem;
+	}
+	&__logo{
+		height: 3.5rem;
+	}
+}
+
+
