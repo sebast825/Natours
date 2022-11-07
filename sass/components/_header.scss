@@ -16,10 +16,12 @@
 	//the , act as || in js
 	//if wana check in FE about the dp need to put the DPR in 2.0 and will activate the query
 	@media only screen and (min-resolution: 192dpi) and (min-width:37em),(min-width:125em)  {
-		background-image: linear-gradient(
-		to right bottom, 
-	rgba($color-secondary-light,.6),
-	rgba($color-primary-dark,.8)),
+	// 	background-image: linear-gradient(
+	// 	to right bottom, 
+	// rgba($color-secondary-light,.6),
+	// rgba($color-primary-dark,.8)),
+	// url(../img/hero.jpg);
+	background-image: 
 	url(../img/hero.jpg);
 	}
 
