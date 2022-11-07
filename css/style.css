@@ -22,7 +22,11 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 ::selection {
   background-color: #55c57a;
@@ -62,7 +66,6 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
   box-sizing: border-box; }
 
 .heading-primary {
@@ -70,7 +73,7 @@ body {
   text-transform: uppercase;
   /* the animation has a bug, moves a little, backface fix that */
   backface-visibility: hidden;
-  margin: 6rem; }
+  margin-bottom: 6rem; }
   .heading-primary--main {
     /* block use the hole space and create line breaks after and before them */
     display: block;
@@ -172,7 +175,7 @@ body {
   transform: skewY(-7deg); }
   @media (min-resolution: 192dpi) {
     .section-features {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.8)), url(../img/nat-4lowress.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.6), rgba(40, 180, 133, 0.8)), url(../img/nat4-.jpg); } }
   .section-features > * {
     transform: skewY(7deg); }
   @media only screen and (max-width: 56.25em) {
@@ -410,7 +413,7 @@ body {
       height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37em), (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.6), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
