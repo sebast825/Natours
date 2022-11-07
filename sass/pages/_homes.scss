@@ -20,13 +20,7 @@
 	rgba($color-primary-light,.6),
 	rgba($color-primary-dark,.8)),
 	url(../img/nat-4lowress.jpg);
-	@media (min-resolution:192dpi) {
-		background-image: linear-gradient(
-		to right bottom, 
-	rgba($color-secondary-light,.6),
-	rgba($color-primary-dark,.8)),
-	url(../img/nat4-.jpg);
-	}
+
 	//
 	background-size: cover;
 	//modify the inclintation of the whole content section
